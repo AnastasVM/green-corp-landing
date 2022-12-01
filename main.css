@@ -61,6 +61,16 @@ header {
     background: url('img/back.png') no-repeat;
     background-position: center;
     background-size: cover;
+
+    position: relative;
+  }
+
+  .orb-canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+
   }
 
   .about__image {
@@ -123,6 +133,7 @@ header {
 
   .card { 
     padding: 35px 40px 25px 40px;
+    background: #FFFFFF;
     border: 1px solid #D9E4E6;
     border-radius: 5px;
   }
@@ -141,15 +152,15 @@ header {
     
   }
 
-  .card_logo1 {
+  .card__logo.yellow {
     color: #ffb406;
   }
 
-  .card_logo2 {
+  .card__logo.red {
     color: #ad1714;
   }
 
-  .card_logo3 {
+  .card__logo.green {
     color: #22a030;
   }
 
@@ -160,6 +171,7 @@ header {
   }
 
   .features__border {
+    width: 100%;
     margin: 50px 0;
     border: 1px solid #E6EAF4;
   }
@@ -236,9 +248,7 @@ header {
   }
 
   .promo__right__card {
-    /* display: flex; */
-    /* flex-direction: column; */
-
+    
     background-color: #fff;
     padding: 30px 40px;
     font-size: 20px;
