@@ -1,5 +1,5 @@
 const COLORS = ["255,108,80", "5,117,18", "29,39,57", "67,189,81"];
-const BUBBLE_DENSITY = 50; //количество пузырьков
+const BUBBLE_DENSITY = 100; //количество пузырьков
 
 function generateDecimalBetween(left, right) {
     return (Math.random() * (left - right) + right).toFixed(2);
@@ -21,7 +21,7 @@ class Bubble {
   
     init() {//будет инициализировать пузырек: выбирать ему один из случайных цветов, какой-то размер, начальное положение на холсте
         this.color = COLORS[Math.floor(Math.random() *COLORS.length)];
-        this.size = generateDecimalBetween(3, 9);
+        this.size = generateDecimalBetween(1, 3);
         this.alpha = generateDecimalBetween(5, 10)/10; //прозрачность
         this.translateX = generateDecimalBetween(0, this.canvasWidth); //начальная позиция пузырька
         this.translateY = generateDecimalBetween(0, this.canvasHeight); //начальная позиция пузырька

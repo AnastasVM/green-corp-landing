@@ -10,10 +10,19 @@ header {
     align-items: center;
     padding: 20px;
 
-    position: sticky;
-    background: white;
+    position: fixed;
+    background: none;
+    left: 0;
+    right: 0;
     top:0;
     z-index: 1;
+
+    transition: background-color, box-shadow .25s ease;
+  }
+
+  .header__scrolled {
+    background-color: #fff;
+    box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
   }
 
   .header__logo {
@@ -54,7 +63,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 115px;
+    padding-top: 200px;
     padding-bottom: 115px;
 
      /* Фон */
